@@ -20,7 +20,6 @@ javaVersion=$(detect_java_version ${BUILD_DIR})
 echo -n "-----> Installing OpenJDK ${javaVersion}..."
 install_java ${BUILD_DIR} ${javaVersion}
 jdk_overlay ${BUILD_DIR}
-ls -la ${BUILD_DIR}
 echo " done"
 
 PROFILE_PATH="$BUILD_DIR/.profile.d/java.sh"
